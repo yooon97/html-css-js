@@ -1,0 +1,36 @@
+** 출력 
+-> 문서 document.write
+-> 콘솔 console.log
+-> 팝업 alert() 
+
+** 입력 
+-> prompt  
+-> confirm 
+
+** 
+    재선언      재할당
+var   O      O
+let   X      O
+const   X      X
+
+** 
+형변환 
+실수 : parseFloat()
+정수 : pareseInt()
+숫자 : Number 
+문자 : String , toString()
+
+
+연산자 JAVA와 다른점 두가지 
+
+1. == vs ===
+== : 값만 비교  "3"==3 True
+=== : 값, 타입 비교  "3" === 3 False
+
+5==="5" False
+5=="5" True
+true==="true" F
+
+2. / => 실제 나눈 값 
+100/3 = 33.3333333333333333
+% => 나머지 

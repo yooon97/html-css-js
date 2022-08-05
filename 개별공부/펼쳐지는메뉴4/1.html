@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+	<meta charset="UTF-8">
+	<title>http://www.blueb.co.kr</title>
+<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Open sans', sans-serif;
+  left: 15%;
+  top: 50px;
+  font-size: 2.5em;
+  position: absolute;
+}
+h2 {
+  font-family: 'open sans', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  opacity: .5;
+  position: absolute;
+  left: 15%;
+  top: 90px;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #3f51b5;
+}
+header .btn-multi {
+  position: absolute;
+  right: 15%;
+  bottom: -54px;
+}
+.btn {
+  display: inline-flex;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 20px;
+  font-size: 14px;
+  background-color: #E91E63;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.2s ease-in;
+  background-position: 50%;
+  outline: none !important;
+}
+.btn.btn-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0 !important;
+  font-size: 18px;
+}
+.btn-multi input {
+  display: none;
+}
+.btn-multi input:not(:checked) ~ label {
+  transform: rotate(0);
+}
+.btn-multi input:not(:checked) ~ label .btn {
+  border-radius: 0;
+  height: 30px;
+  width: 30px;
+  box-shadow: none;
+}
+.btn-multi input:not(:checked) ~ label .btn:first-child {
+  border-top-left-radius: 100%;
+  transform: translate(25px, 25px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(2) {
+  border-top-right-radius: 100%;
+  transform: translate(55px, 25px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(3) {
+  border-bottom-left-radius: 100%;
+  transform: translate(25px, 55px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(4) {
+  border-bottom-right-radius: 100%;
+  transform: translate(55px, 55px);
+}
+.btn-multi input:not(:checked) ~ label .btn .icon {
+  opacity: 0;
+}
+.btn-multi input:not(:checked) ~ label > .icon {
+  opacity: 1;
+}
+.btn-multi label {
+  position: relative;
+  height: 110px;
+  width: 110px;
+  display: block;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.btn-multi label .btn {
+  position: absolute;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.btn-multi label .btn:nth-child(2) {
+  transform: translate(60px, 0);
+}
+.btn-multi label .btn:nth-child(3) {
+  transform: translate(0, 60px);
+}
+.btn-multi label .btn:nth-child(4) {
+  transform: translate(60px, 60px);
+}
+.btn-multi label .btn:not(:nth-child(4)) .icon {
+  transform: rotate(-45deg);
+}
+.btn-multi label .btn .icon {
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+}
+.btn-multi label > .icon {
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  left: calc(39%);
+  top: calc(36%);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+main {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 250px;
+  margin-bottom: 50px;
+  font-family: 'open sans', sans-serif;
+  font-weight: lighter;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+	
+	<div class="btn-multi">
+		<input type="checkbox" id="multi-btn" name="multi-btn" />
+		<label for="multi-btn">
+			<span class="btn btn-circle"><i class="fa fa-comment icon" aria-hidden="true"></i></span>
+			<span class="btn btn-circle"><i class="fa fa-heart icon" aria-hidden="true"></i></span>
+			<span class="btn btn-circle"><i class="fa fa-pencil icon" aria-hidden="true"></i></span>
+			<span class="btn btn-circle"><i class="fa fa-plus icon"></i></span>
+			<i class="fa fa-plus icon"></i>
+		</label>
+	</div>
+</header>
+
+</body>
+</html>

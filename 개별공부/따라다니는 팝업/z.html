@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>http://www.blueb.co.kr</title>
+</head>
+<body>
+
+<SCRIPT LANGUAGE="javascript">
+
+function opennew() {
+	newwin = window.open("", "newwindow", "height=200, width=200, scrollbars=no");
+	newwin.document.open();
+	newwin.document.write("<B>팝업 윈도우 입니다</B>");
+	newwin.document.close();
+}
+
+function track() {
+	x = event.clientX
+	y = event.clientY
+	document.form.tracker.value = x + ", " + y;
+	xpos = x + 50
+	ypos = y + 50
+	newwin.moveTo(xpos,ypos);
+}
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="opennew();" onmousemove="track();">
+
+<FORM NAME="form">
+<INPUT NAME="tracker" TYPE="text"><br> <br>
+<input type="button"value=" 창닫기 "onClick="newwin.close();"></A><br>
+<input type="button" value=" 창열기 " onClick="opennew();"></a>
+</FORM>
+
+</BODY>
+</HTML>

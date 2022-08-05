@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>http://www.blueb.co.kr</title>
+
+<style>
+body {font-family:돋움}
+h1 {clear:both;display:block;border-bottom:1px #ff6000 solid;color:#ff6000;margin-top:50px;font-family:georgia}
+</style>
+
+	<link rel="stylesheet" href="jqtransform.css" type="text/css" media="all" />
+	<script type="text/javascript" src="jquery-1.4.3.min.js" ></script>
+	<script type="text/javascript" src="jquery.jqtransform.js" ></script>
+	<script language="javascript">
+		$(function(){
+			$('form').jqTransform({imgPath:'./img/'});
+		});
+	</script>
+	
+</head>
+<body>
+
+<form action="#" method="POST">
+
+<h1>Input</h1>
+		<input type="text" name="inputtext"/><br/><br/>
+		<input type="password"/>
+
+
+<h1>Checkbox</h1>
+<input type="checkbox" name="chbox" id=""><label>체크 1</label>
+<input type="checkbox" name="chbox" id=""><label>체크 2</label>
+<input type="checkbox" name="chbox" id=""><label>체크 3</label>
+<input type="checkbox" name="chbox" id=""><label>체크 4</label>
+<input type="checkbox" name="chbox" id=""><label>체크 5</label>
+
+
+<h1>Radio</h1> 
+	<input type="radio" id="" name="question" value="" checked ><label>라디오 1</label>
+	<input type="radio" id="" name="question" value="" ><label>라디오 2</label>
+
+
+<h1>Textarea :</h1> <textarea cols="40" rows="12" name="mytext"></textarea>
+
+
+<h1>Select :</h1>
+	<select name="select">
+		<option value="">1&nbsp;</option>
+		<option value="opt1">2&nbsp;</option>
+	</select>
+
+
+	<select name="select2" >
+		<option value="opt1">Option 1</option>
+		<option value="opt2">Option 2</option>
+		<option value="opt3">Option 3</option>
+		<option value="opt4">Option 4</option>
+		<option value="opt5">Option 5</option>
+		<option value="opt6">Option 6</option>
+		<option value="opt7">Option 7</option>
+		<option value="opt8">Option 8</option>
+	</select>
+
+<h1>button :</h1>
+<input type="submit" value="전송" />
+<input type="reset" value="다시 쓰기" />
+
+		
+</form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>http://www.blueb.co.kr</title>
+	<style>
+body {
+  font-size: 28px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+a {
+  transition: .3s;
+  background-position: top left;
+  background-image: url(http://www.blueb.co.kr/SRC2/_image/linkbg.png);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+a:before {
+  position: absolute;
+  content: '';
+  background: #4A90E2;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 5px;
+  transition: .3s .1s;
+}
+a:hover {
+  transition: .6s .1s;
+  background-position: bottom right;
+}
+a:hover:before {
+  transition: .3s;
+  transform: translateY(-100%) scaleY(0);
+  opacity: 0;
+}
+
+	</style>
+
+</head>
+<body>
+
+<p>링크 위에 마우스 커서를 올리면 <a href="#">링크1</a> 이렇게 됩니다 <a href="#">링크2</a>
+
+
+
+</body>
+</html>

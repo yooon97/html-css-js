@@ -1,0 +1,656 @@
+/*********************************
+| File: buttons.css
+| By: Sazzad Hossain
+| URL: http://sazzadhossain.org
+*********************************/
+
+/***NORMAL GRAY BUTTONS***/
+
+a.sz-icon-button { 
+    padding-right: 17px; 
+    height: 34px; 
+    float: left; 
+    display: block; 
+    font: 14px Arial, sans-serif, Verdana, Tahoma; 
+    color: #474747; 
+    margin: 8px 6px; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px #ffffff; 
+    background: url(../images/buttons/icon-button-bg-sprite.png) no-repeat right -34px; 
+    
+}
+
+a.sz-icon-button span.sz_icons_set { 
+    background: url(../images/buttons/icon-button-bg-sprite.png) no-repeat; 
+    height: 34px; 
+    display: block; 
+}
+
+a.sz-icon-button span.sz_icons_set span { 
+    padding: 0px 0px 0px 40px; 
+    display: block; 
+    height: 34px; 
+    line-height: 32px; 
+}
+
+a.sz-icon-button:hover { 
+    text-decoration: none; 
+    color: #000000 !important; 
+    background: url(../images/buttons/icon-button-bg-sprite.png) no-repeat right bottom; 
+}
+	
+a.sz-icon-button:hover span.sz_icons_set { 
+    background: url(../images/buttons/icon-button-bg-sprite.png) no-repeat left -68px; 
+}
+
+
+/***NORMAL GREY BUTTON ICONS***/
+
+a.accept-icon span.sz_icons_set span { 
+    background: url(../images/buttons/accept.png) no-repeat 15px 8px; 
+}
+
+a.add-icon span.sz_icons_set span { 
+    background: url(../images/buttons/add.png) no-repeat 15px 8px; 
+}
+
+a.attach-icon span.sz_icons_set span { 
+    background: url(../images/buttons/attach.png) no-repeat 15px 8px; 
+}
+
+a.award-icon span.sz_icons_set span { 
+    background: url(../images/buttons/award.png) no-repeat 15px 8px; 
+}
+
+a.book-icon span.sz_icons_set span { 
+    background: url(../images/buttons/book.png) no-repeat 15px 8px; 
+}
+
+a.calendar-icon span.sz_icons_set span { 
+    background: url(../images/buttons/calendar.png) no-repeat 15px 8px; 
+}
+
+a.code-icon span.sz_icons_set span { 
+    background: url(../images/buttons/code.png) no-repeat 15px 8px; 
+}
+
+a.css-icon span.sz_icons_set span { 
+    background: url(../images/buttons/css.png) no-repeat 15px 8px; 
+}
+
+a.delete-icon span.sz_icons_set span { 
+    background: url(../images/buttons/delete.png) no-repeat 15px 8px; 
+}
+
+a.download-icon span.sz_icons_set span { 
+    background: url(../images/buttons/download.png) no-repeat 15px 8px; 
+}
+
+a.edit-icon span.sz_icons_set span { 
+    background: url(../images/buttons/edit.png) no-repeat 15px 8px; 
+}
+
+a.flash-icon span.sz_icons_set span { 
+    background: url(../images/buttons/flash.png) no-repeat 15px 8px; 
+}
+
+a.html-icon span.sz_icons_set span { 
+    background: url(../images/buttons/html.png) no-repeat 15px 8px; 
+}
+
+a.login-icon span.sz_icons_set span { 
+    background: url(../images/buttons/login.png) no-repeat 15px 8px; 
+}
+
+a.mail-icon span.sz_icons_set span { 
+    background: url(../images/buttons/mail.png) no-repeat 15px 8px; 
+}
+
+a.media-icon span.sz_icons_set span { 
+    background: url(../images/buttons/media.png) no-repeat 15px 8px; 
+}
+
+a.money-icon span.sz_icons_set span { 
+    background: url(../images/buttons/money.png) no-repeat 15px 8px; 
+}
+
+    a.money-usd-icon span.sz_icons_set span { 
+        background: url(../images/buttons/money_usd.png) no-repeat 15px 8px; 
+    }
+
+    a.money-euro-icon span.sz_icons_set span { 
+        background: url(../images/buttons/money_euro.png) no-repeat 15px 8px; 
+    }
+
+    a.money-pound-icon span.sz_icons_set span { 
+        background: url(../images/buttons/money_pound.png) no-repeat 15px 8px; 
+    }
+
+    a.money-yen-icon span.sz_icons_set span { 
+        background: url(../images/buttons/money_yen.png) no-repeat 15px 8px; 
+    }
+
+a.notice-icon span.sz_icons_set span { 
+    background: url(../images/buttons/notice.png) no-repeat 15px 8px; 
+}
+
+a.order-icon span.sz_icons_set span { 
+    background: url(../images/buttons/order.png) no-repeat 15px 8px; 
+}
+
+a.pdf-icon span.sz_icons_set span { 
+    background: url(../images/buttons/pdf.png) no-repeat 15px 8px; 
+}
+
+a.podcast-icon span.sz_icons_set span { 
+    background: url(../images/buttons/podcast.png) no-repeat 15px 8px; 
+}
+
+a.refresh-icon span.sz_icons_set span { 
+    background: url(../images/buttons/refresh.png) no-repeat 15px 8px; 
+}
+
+a.rss-icon span.sz_icons_set span { 
+    background: url(../images/buttons/rss.png) no-repeat 15px 8px; 
+}
+
+a.search-icon span.sz_icons_set span { 
+    background: url(../images/buttons/search.png) no-repeat 15px 8px; 
+}
+
+a.stats-icon span.sz_icons_set span { 
+    background: url(../images/buttons/stats.png) no-repeat 15px 8px; 
+}
+
+a.warning-icon span.sz_icons_set span { 
+    background: url(../images/buttons/warning.png) no-repeat 15px 8px; 
+}
+
+
+
+
+
+/***PINK BUTTONS***/
+a.sz-icon-button-pink { 
+    padding-right: 17px; 
+    height: 34px; 
+    float: left; 
+    display: block; 
+    font: 14px Arial, sans-serif, Verdana, Tahoma; 
+    color: #474747; 
+    margin: 8px 6px; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px #ffffff; 
+    background: url(../images/buttons/icon-button-bg-sprite-pink.png) no-repeat right -34px; 
+}
+
+a.sz-icon-button-pink span.sz_icons_set-pink { 
+    background: url(../images/buttons/icon-button-bg-sprite-pink.png) no-repeat; 
+    height: 34px; 
+    display: block; 
+}
+
+a.sz-icon-button-pink span.sz_icons_set-pink span { 
+    padding: 0px 0px 0px 40px; 
+    display: block; 
+    height: 34px; 
+    line-height: 32px; 
+}
+
+a.sz-icon-button-pink:hover { 
+    text-decoration: none; 
+    color: #000000 !important; 
+    background: url(../images/buttons/icon-button-bg-sprite-pink.png) no-repeat right bottom; 
+}
+	
+a.sz-icon-button-pink:hover span.sz_icons_set-pink { 
+    background: url(../images/buttons/icon-button-bg-sprite-pink.png) no-repeat left -68px; 
+}
+
+/***PINK BUTTON ICONS***/
+
+a.accept-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/accept.png) no-repeat 15px 8px; 
+}
+
+a.add-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/add.png) no-repeat 15px 8px; 
+}
+
+a.attach-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/attach.png) no-repeat 15px 8px; 
+}
+
+a.award-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/award.png) no-repeat 15px 8px; 
+}
+
+a.book-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/book.png) no-repeat 15px 8px; 
+}
+
+a.calendar-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/calendar.png) no-repeat 15px 8px; 
+}
+
+a.code-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/code.png) no-repeat 15px 8px; 
+}
+
+a.css-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/css.png) no-repeat 15px 8px; 
+}
+
+a.delete-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/delete.png) no-repeat 15px 8px; 
+}
+
+a.download-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/download.png) no-repeat 15px 8px; 
+}
+
+a.edit-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/edit.png) no-repeat 15px 8px; 
+}
+
+a.flash-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/flash.png) no-repeat 15px 8px; 
+}
+
+a.html-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/html.png) no-repeat 15px 8px; 
+}
+
+a.login-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/login.png) no-repeat 15px 8px; 
+}
+
+a.mail-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/mail.png) no-repeat 15px 8px; 
+}
+
+a.media-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/media.png) no-repeat 15px 8px; 
+}
+
+a.money-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/money.png) no-repeat 15px 8px; 
+}
+
+    a.money-usd-icon span.sz_icons_set-pink span { 
+        background: url(../images/buttons/money_usd.png) no-repeat 15px 8px; 
+    }
+
+    a.money-euro-icon span.sz_icons_set-pink span { 
+        background: url(../images/buttons/money_euro.png) no-repeat 15px 8px; 
+    }
+
+    a.money-pound-icon span.sz_icons_set-pink span { 
+        background: url(../images/buttons/money_pound.png) no-repeat 15px 8px; 
+    }
+
+    a.money-yen-icon span.sz_icons_set-pink span { 
+        background: url(../images/buttons/money_yen.png) no-repeat 15px 8px; 
+    }
+
+a.notice-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/notice.png) no-repeat 15px 8px; 
+}
+
+a.order-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/order.png) no-repeat 15px 8px; 
+}
+
+a.pdf-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/pdf.png) no-repeat 15px 8px; 
+}
+
+a.podcast-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/podcast.png) no-repeat 15px 8px; 
+}
+
+a.refresh-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/refresh.png) no-repeat 15px 8px; 
+}
+
+a.rss-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/rss.png) no-repeat 15px 8px; 
+}
+
+a.search-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/search.png) no-repeat 15px 8px; 
+}
+
+a.stats-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/stats.png) no-repeat 15px 8px; 
+}
+
+a.warning-icon span.sz_icons_set-pink span { 
+    background: url(../images/buttons/warning.png) no-repeat 15px 8px; 
+}
+
+
+
+
+
+
+/***BLUE BUTTONS***/
+a.sz-icon-button-blue { 
+    padding-right: 17px; 
+    height: 34px; 
+    float: left; 
+    display: block; 
+    font: 14px Arial, sans-serif, Verdana, Tahoma; 
+    color: #474747; 
+    margin: 8px 6px; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px #ffffff; 
+    background: url(../images/buttons/icon-button-bg-sprite-blue.png) no-repeat right -34px; 
+}
+
+a.sz-icon-button-blue span.sz_icons_set-blue { 
+    background: url(../images/buttons/icon-button-bg-sprite-blue.png) no-repeat; 
+    height: 34px; 
+    display: block; 
+}
+
+a.sz-icon-button-blue span.sz_icons_set-blue span { 
+    padding: 0px 0px 0px 40px; 
+    display: block; 
+    height: 34px; 
+    line-height: 32px; 
+}
+
+a.sz-icon-button-blue:hover { 
+    text-decoration: none; 
+    color: #000000 !important; 
+    background: url(../images/buttons/icon-button-bg-sprite-blue.png) no-repeat right bottom; 
+}
+	
+a.sz-icon-button-blue:hover span.sz_icons_set-blue { 
+    background: url(../images/buttons/icon-button-bg-sprite-blue.png) no-repeat left -68px; 
+}
+
+/***BLUE BUTTON ICONS***/
+
+a.accept-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/accept.png) no-repeat 15px 8px; 
+}
+
+a.add-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/add.png) no-repeat 15px 8px; 
+}
+
+a.attach-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/attach.png) no-repeat 15px 8px; 
+}
+
+a.award-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/award.png) no-repeat 15px 8px; 
+}
+
+a.book-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/book.png) no-repeat 15px 8px; 
+}
+
+a.calendar-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/calendar.png) no-repeat 15px 8px; 
+}
+
+a.code-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/code.png) no-repeat 15px 8px; 
+}
+
+a.css-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/css.png) no-repeat 15px 8px; 
+}
+
+a.delete-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/delete.png) no-repeat 15px 8px; 
+}
+
+a.download-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/download.png) no-repeat 15px 8px; 
+}
+
+a.edit-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/edit.png) no-repeat 15px 8px; 
+}
+
+a.flash-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/flash.png) no-repeat 15px 8px; 
+}
+
+a.html-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/html.png) no-repeat 15px 8px; 
+}
+
+a.login-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/login.png) no-repeat 15px 8px; 
+}
+
+a.mail-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/mail.png) no-repeat 15px 8px; 
+}
+
+a.media-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/media.png) no-repeat 15px 8px; 
+}
+
+a.money-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/money.png) no-repeat 15px 8px; 
+}
+
+    a.money-usd-icon span.sz_icons_set-blue span { 
+        background: url(../images/buttons/money_usd.png) no-repeat 15px 8px; 
+    }
+
+    a.money-euro-icon span.sz_icons_set-blue span { 
+        background: url(../images/buttons/money_euro.png) no-repeat 15px 8px; 
+    }
+
+    a.money-pound-icon span.sz_icons_set-blue span { 
+        background: url(../images/buttons/money_pound.png) no-repeat 15px 8px; 
+    }
+
+    a.money-yen-icon span.sz_icons_set-blue span { 
+        background: url(../images/buttons/money_yen.png) no-repeat 15px 8px; 
+    }
+
+a.notice-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/notice.png) no-repeat 15px 8px; 
+}
+
+a.order-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/order.png) no-repeat 15px 8px; 
+}
+
+a.pdf-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/pdf.png) no-repeat 15px 8px; 
+}
+
+a.podcast-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/podcast.png) no-repeat 15px 8px; 
+}
+
+a.refresh-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/refresh.png) no-repeat 15px 8px; 
+}
+
+a.rss-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/rss.png) no-repeat 15px 8px; 
+}
+
+a.search-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/search.png) no-repeat 15px 8px; 
+}
+
+a.stats-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/stats.png) no-repeat 15px 8px; 
+}
+
+a.warning-icon span.sz_icons_set-blue span { 
+    background: url(../images/buttons/warning.png) no-repeat 15px 8px; 
+}
+
+
+
+
+/***BLUE BUTTONS***/
+a.sz-icon-button-green { 
+    padding-right: 17px; 
+    height: 34px; 
+    float: left; 
+    display: block; 
+    font: 14px Arial, sans-serif, Verdana, Tahoma; 
+    color: #474747; 
+    margin: 8px 6px; 
+    text-decoration: none; 
+    text-shadow: 1px 1px 1px #ffffff; 
+    background: url(../images/buttons/icon-button-bg-sprite-green.png) no-repeat right -34px; 
+}
+
+a.sz-icon-button-green span.sz_icons_set-green { 
+    background: url(../images/buttons/icon-button-bg-sprite-green.png) no-repeat; 
+    height: 34px; 
+    display: block; 
+}
+
+a.sz-icon-button-green span.sz_icons_set-green span { 
+    padding: 0px 0px 0px 40px; 
+    display: block; 
+    height: 34px; 
+    line-height: 32px; 
+}
+
+a.sz-icon-button-green:hover { 
+    text-decoration: none; 
+    color: #000000 !important; 
+    background: url(../images/buttons/icon-button-bg-sprite-green.png) no-repeat right bottom; 
+}
+	
+a.sz-icon-button-green:hover span.sz_icons_set-green { 
+    background: url(../images/buttons/icon-button-bg-sprite-green.png) no-repeat left -68px; 
+}
+
+/***BLUE BUTTON ICONS***/
+
+a.accept-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/accept.png) no-repeat 15px 8px; 
+}
+
+a.add-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/add.png) no-repeat 15px 8px; 
+}
+
+a.attach-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/attach.png) no-repeat 15px 8px; 
+}
+
+a.award-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/award.png) no-repeat 15px 8px; 
+}
+
+a.book-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/book.png) no-repeat 15px 8px; 
+}
+
+a.calendar-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/calendar.png) no-repeat 15px 8px; 
+}
+
+a.code-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/code.png) no-repeat 15px 8px; 
+}
+
+a.css-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/css.png) no-repeat 15px 8px; 
+}
+
+a.delete-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/delete.png) no-repeat 15px 8px; 
+}
+
+a.download-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/download.png) no-repeat 15px 8px; 
+}
+
+a.edit-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/edit.png) no-repeat 15px 8px; 
+}
+
+a.flash-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/flash.png) no-repeat 15px 8px; 
+}
+
+a.html-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/html.png) no-repeat 15px 8px; 
+}
+
+a.login-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/login.png) no-repeat 15px 8px; 
+}
+
+a.mail-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/mail.png) no-repeat 15px 8px; 
+}
+
+a.media-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/media.png) no-repeat 15px 8px; 
+}
+
+a.money-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/money.png) no-repeat 15px 8px; 
+}
+
+    a.money-usd-icon span.sz_icons_set-green span { 
+        background: url(../images/buttons/money_usd.png) no-repeat 15px 8px; 
+    }
+
+    a.money-euro-icon span.sz_icons_set-green span { 
+        background: url(../images/buttons/money_euro.png) no-repeat 15px 8px; 
+    }
+
+    a.money-pound-icon span.sz_icons_set-green span { 
+        background: url(../images/buttons/money_pound.png) no-repeat 15px 8px; 
+    }
+
+    a.money-yen-icon span.sz_icons_set-green span { 
+        background: url(../images/buttons/money_yen.png) no-repeat 15px 8px; 
+    }
+
+a.notice-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/notice.png) no-repeat 15px 8px; 
+}
+
+a.order-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/order.png) no-repeat 15px 8px; 
+}
+
+a.pdf-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/pdf.png) no-repeat 15px 8px; 
+}
+
+a.podcast-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/podcast.png) no-repeat 15px 8px; 
+}
+
+a.refresh-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/refresh.png) no-repeat 15px 8px; 
+}
+
+a.rss-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/rss.png) no-repeat 15px 8px; 
+}
+
+a.search-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/search.png) no-repeat 15px 8px; 
+}
+
+a.stats-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/stats.png) no-repeat 15px 8px; 
+}
+
+a.warning-icon span.sz_icons_set-green span { 
+    background: url(../images/buttons/warning.png) no-repeat 15px 8px; 
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="mopTip-2.2.js"></script>
+<script type="text/javascript" src="jquery.pngFix-1.2.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#demo1Btn").mopTip({'w':150,'style':"overOut",'get':"#demo1"});
+$("#demo2Btn").mopTip({'w':150,'style':"overClick",'get':"#demo2"});
+$("#demo3Btn").mopTip({'w':150,'style':"overOut",'get':"#demo3"});
+$("#demo4Btn").mopTip({'w':150,'style':"overClick",'get':"#demo4"});
+$("#demo5Btn").mopTip({'w':150,'style':"overOut",'get':"#demo5"});
+});
+</script>
+<title>Jquery Plugin MopTip 2.2 demo</title>
+<style type="text/css">
+<!--
+#demo {
+	top: 0px;
+	width: 100%;
+}
+#demo .expl {
+	background-color: #F8F8F2;
+	margin: 0 20px 0 20px;
+}
+#tipBox1 {
+	position: absolute;
+	left: 150px;
+	top: 120px;
+}
+#tipBox2case {
+	height: 100px;
+	width: 100%;
+	top: 0px;
+	left:0px;
+	text-align: center;
+}
+#tipBox3 {
+	position: absolute;
+	left: 100px;
+	bottom: 110px;
+}
+#demo3Btn {
+	padding: 5px;
+	width: 100px;
+	margin: 0 5px 0 0;
+	background-color: #AE0000;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#demo4Btn {
+	padding: 5px;
+	width: 100px;
+	margin: 0 0 0 5px;
+	background-color: #AE0000;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#tipBox4case {
+	position: absolute;
+	right: 120px;
+	top: 180px;
+}
+.demo4Case {
+	height: 220px;
+	width: 250px;
+	text-align: left;
+	padding: 10px;
+}
+.mopTipCase {
+	width: 600px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#tipBox5case {
+	position: absolute;
+	right: 100px;
+	bottom: 150px;
+}
+#demo5Btn {
+	width: 100px;
+	padding: 30px 0 30px 0;
+	background-color: #AE0000;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin: 0 0 0 5px;
+}
+#footerBoxForThisPage {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+.setMiddle {
+	vertical-align: middle;
+}
+.tipTxtcCase {
+	height: 100%;
+}
+.bottomLine {
+	height: 190px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #AE0000;
+	right: 0px;
+}
+.bottomLineIn {
+	padding: 3px 0 0 10px;
+	color: #AE0000;
+}
+
+-->
+</style>
+</head>
+<body>
+
+<div id="tipBox2" class="contentCenter">
+	<a id="demo2Btn" class="navi f14 bold" href="#">demo2</a>
+</div>
+
+
+<div id="tipBox1">
+  <div><a id="demo1Btn" class="navi f14 bold" href="#">demo1</a></div>
+</div>
+
+<div id="tipBox3">
+  <table class="f_left" height="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    	<td class="setMiddle"><div id="demo3Btn" class="f_right f14 bold">demo3</div></td>
+      <td class="setMiddle"></td>
+
+      
+    </tr>
+  </table>
+</div>
+<div id="tipBox4case">
+  <table class="f_left" height="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="setMiddle"></td>
+      <td class="setMiddle"><div id="demo4Btn" class="f_right f14 bold">demo4</div></td>
+    </tr>
+  </table>
+</div>
+<div id="tipBox5case">
+  <table class="f_left" height="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+
+      <td valign="middle"><div id="demo5Btn" class="f_right f14 bold">demo5</div></td>
+    
+  </table>
+</div>
+
+<div class="hidden">
+  <div id="demo1">DEMO1 풍선도움말 내용</div>
+  <div id="demo2">"overClick" DEMO2 풍선도움말 내용</div>
+  <div id="demo3"><img class="f_left" src="jpg4.jpg" />"overOut" DEMO3 풍선도움말 내용</div>
+  <div id="demo4"><img class="f_left" src="jpg4.jpg" />"overClick" DEMO4 풍선도움말 내용</div>
+  <div id="demo5"><img class="f_left" src="jpg4.jpg" />"overOut" DEMO5 풍선도움말 내용</div>
+</div>
+
+</body>
+</html>

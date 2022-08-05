@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>http://www.blueb.co.kr</title>
+
+<script type="text/javascript">
+<!--
+window.onload = function() { document.onkeydown = register;	document.onkeyup = register; var x = document.forms[0].elements[0];	x.onkeydown = register;	x.onkeyup = register;}
+function register(e)
+{
+	if (!e) e = window.event;
+	var keyInfo = String.fromCharCode(e.keyCode) + '\n';
+	keyInfo += 'Event: ' + e.type + '\n\n';
+	keyInfo += 'You pressed: ' + String.fromCharCode(e['keyCode']) + ' [Decimal: ' + e['keyCode'] + ']\n';
+	keyInfo += 'ALT: ' + e['altKey'] + '\n';
+	keyInfo += 'CTRL: ' + e['ctrlKey'] + '\n';
+	keyInfo += 'SHIFT: ' + e['shiftKey'] + '\n';
+	keyInfo += 'REPEAT: ' + e['repeat'] + '\n';
+	keyInfo += 'WHICH: ' + e['which'];
+	document.keyc.log.value = keyInfo;
+}
+
+// -->
+</script>
+</head>
+<body>
+키보드 키를 눌러보세요..<p>
+<form name=keyc action="return false;">
+<textarea style="background: #eee; border: 1px #ccc solid; padding: 15px; overflow: hidden; width: 330px; font-family: Arial, sans-serif; font-size: 11px" name="log" rows="12" cols="42">

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+	<meta charset="UTF-8">
+	<title>http://www.blueb.co.kr</title>
+
+<style>
+html, body {
+  font-size: 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+  margin: 0;
+  line-height: 1.5;
+  background-color: #333;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  margin-top: 0;
+  line-height: 1.25;
+  text-align: center;
+  font-family: "Roboto Slab", Times, "Times New Roman", serif;
+  color: white;
+}
+
+/* highlight colors */
+::-moz-selection {
+  background-color: #333;
+  color: white;
+}
+
+::selection {
+  background-color: #333;
+  color: white;
+}
+
+/* wrapper */
+.wrapper {
+  max-width: 70ch;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* tabs */
+.tabs {
+  border-right: 1px solid #ccc;
+}
+.tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tabs input[type=radio] {
+  display: none;
+}
+.tabs label {
+  display: block;
+  float: left;
+  width: 33.33333%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-right: none;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-weight: 700;
+  color: coral;
+  cursor: pointer;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+.tabs label:hover {
+  background-color: white;
+}
+.tabs [id^="tab"]:checked + label {
+  border-bottom-color: white;
+  background: white;
+  color: #333;
+}
+
+.tab-content {
+  display: none;
+  float: left;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background-color: white;
+}
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3 {
+  display: block;
+}
+
+.other-content {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  body, html {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 645px) {
+  .tabs label {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body, html {
+    font-size: 16px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+	<h1>Pure CSS Tabs</h1>
+	<div class="tabs cf">
+		<input type="radio" name="tabs" id="tab1" checked>
+		<label for="tab1">
+        Description
+      </label>
+		<input type="radio" name="tabs" id="tab2">
+		<label for="tab2">
+        Features
+      </label>
+		<input type="radio" name="tabs" id="tab3">
+		<label for="tab3">
+        Delivery & returns
+      </label>
+
+		<div id="tab-content1" class="tab-content">
+			Lorem ipsum dolor sit amet, ne duo urbanitas eloquentiam consectetuer, vel et stet complectitur intellegebat, malorum alterum mei no. Ut alii reprehendunt cum, homero munere mentitum mei eu. At sit everti aliquid, ad nusquam voluptaria pro, ad pri quot
+			aeterno constituto.
+		</div>
+		<div id="tab-content2" class="tab-content">
+			Lorem ipsum dolor sit amet, ne duo urbanitas eloquentiam consectetuer, vel et stet complectitur intellegebat, malorum alterum mei no. Ut alii reprehendunt cum, homero munere mentitum mei eu. At sit everti aliquid, ad nusquam voluptaria pro, ad pri quot
+			aeterno constituto. Phaedrum volutpat cu vix, vim cu fugit iriure iudicabit, sea dico veri ei. Detracto copiosae platonem nam id, nonumy molestie indoctum sit no. Vix paulo facete an, ne usu viris graece legendos.
+		</div>
+		<div id="tab-content3" class="tab-content">
+			Lorem ipsum dolor sit amet, ne duo urbanitas eloquentiam consectetuer, vel et stet complectitur intellegebat, malorum alterum mei no. Ut alii reprehendunt cum, homero munere mentitum mei eu. At sit everti aliquid, ad nusquam voluptaria pro, ad pri quot
+			aeterno constituto. Phaedrum volutpat cu vix, vim cu fugit iriure iudicabit, sea dico veri ei. Detracto copiosae platonem nam id, nonumy molestie indoctum sit no. Vix paulo facete an, ne usu viris graece legendos. Cum ei reque iuvaret quaerendum, no
+			eum nibh omnes, ei quo doctus explicari. No mea eirmod sententiae, ornatus evertitur ex usu. Aeque accusata gubergren ad cum, vim et movet volutpat. Cum ea recteque reformidans, tantas disputando et vis, ei usu pericula facilisis. Qui meliore reprehendunt
+			ne.
+		</div>
+	</div>
+
+
+	<div class="other-content">
+		<p>
+			Lorem ipsum dolor sit amet, ne duo urbanitas eloquentiam consectetuer, vel et stet complectitur intellegebat.
+		</p>
+	</div>
+</div>
+
+
+</body>
+</html>

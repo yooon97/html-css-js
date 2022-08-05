@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>http://www.blueb.co.kr</title>
+
+<script>
+var dragapproved=false
+var minrestore=0
+var initialwidth,initialheight
+var ie5=document.all&&document.getElementById
+var ns6=document.getElementById&&!document.all
+
+function iecompattest(){
+	return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function drag_drop(e){
+	if (ie5&&dragapproved&&event.button==1){
+		document.getElementById("dwindow").style.left=tempx+event.clientX-offsetx+"px"
+		document.getElementById("dwindow").style.top=tempy+event.clientY-offsety+"px"
+	}
+	else if (ns6&&dragapproved){
+		document.getElementById("dwindow").style.left=tempx+e.clientX-offsetx+"px"
+		document.getElementById("dwindow").style.top=tempy+e.clientY-offsety+"px"
+	}
+}
+
+function initializedrag(e){
+	offsetx=ie5? event.clientX : e.clientX
+	offsety=ie5? event.clientY : e.clientY
+	document.getElementById("dwindowcontent").style.display="none" //extra
+	tempx=parseInt(document.getElementById("dwindow").style.left)
+	tempy=parseInt(document.getElementById("dwindow").style.top)
+
+	dragapproved=true
+	document.getElementById("dwindow").onmousemove=drag_drop
+}
+
+function loadwindow(url,width,height){
+	if (!ie5&&!ns6)
+		window.open(url,"","width=width,height=height,scrollbars=1")
+	else{
+		document.getElementById("dwindow").style.display=''
+		document.getElementById("dwindow").style.width=initialwidth=width+"px"
+		document.getElementById("dwindow").style.height=initialheight=height+"px"
+		document.getElementById("dwindow").style.left="30px"
+		document.getElementById("dwindow").style.top=ns6? window.pageYOffset*1+30+"px" : iecompattest().scrollTop*1+30+"px"
+		document.getElementById("cframe").src=url
+	}
+}
+
+function maximize(){
+	if (minrestore==0){
+		minrestore=1 //maximize window
+		document.getElementById("maxname").setAttribute("src","http://www.blueb.co.kr/SRC/javascript/image/restore.gif")
+		document.getElementById("dwindow").style.width=ns6? window.innerWidth-20+"px" : iecompattest().clientWidth+"px"
+		document.getElementById("dwindow").style.height=ns6? window.innerHeight-20+"px" : iecompattest().clientHeight+"px"
+	}
+	else{
+		minrestore=0 //restore window
+		document.getElementById("maxname").setAttribute("src","http://www.blueb.co.kr/SRC/javascript/image/max.gif")
+		document.getElementById("dwindow").style.width=initialwidth
+		document.getElementById("dwindow").style.height=initialheight
+	}
+	document.getElementById("dwindow").style.left=ns6? window.pageXOffset+"px" : iecompattest().scrollLeft+"px"
+	document.getElementById("dwindow").style.top=ns6? window.pageYOffset+"px" : iecompattest().scrollTop+"px"
+}
+
+function closeit(){
+	document.getElementById("dwindow").style.display="none"
+}
+
+function stopdrag(){
+	dragapproved=false;
+	document.getElementById("dwindow").onmousemove=null;
+	document.getElementById("dwindowcontent").style.display="" //extra
+}
+
+</script>
+</head>
+<body>
+
+
+<div id="dwindow" style="border:1px #222222 solid;background-color:efefef;position:absolute;cursor:hand;left:0px;top:0px;display:none" onMousedown="initializedrag(event)" onMouseup="stopdrag()" onSelectStart="return false">
+	<table width=100% cellpadding=3 cellspacing=0 border=0>
+	<td bgcolor=c0c0c0 style=font-family:tahoma;font-size:8pt;> <B>:: DRAG</B></td>
+	<td bgcolor=c0c0c0 align=right><img src="http://www.blueb.co.kr/SRC/javascript/image/max.gif" id="maxname" onClick="maximize()"><img src="http://www.blueb.co.kr/SRC/javascript/image/close.gif" onClick="closeit()"></td>
+	</table>
+	<div id="dwindowcontent" style="height:100%"><iframe id="cframe" src="" width=100% height=100%></iframe></div>
+</div>
+
+<script>
+if (ns6) window.onload=new Function('loadwindow("http://www.blueb.co.kr",600,400)')
+else
+	loadwindow("http://www.blueb.co.kr",600,400)
+</script>
+
+<a href="javascript:loadwindow('http://www.blueb.co.kr',600,400)"><B>블루비 레이어 팝업 띄우기</B></a>

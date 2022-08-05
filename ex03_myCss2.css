@@ -1,0 +1,31 @@
+
+#layout{
+    width: 500px;
+    height: 500px;
+}
+#header{
+    background-color: red;
+    height: 10%;
+}
+#nav{
+    background-color: antiquewhite;
+    height: 10%;
+}
+#side{
+    background-color: aqua;
+    float: left;
+    width: 30%;
+    height: 60%;
+}
+#section1{
+    background-color: green;
+    height: 30%;
+}
+#section2{
+    background-color: tomato;
+    height: 30%;
+}
+#footer{
+    background-color: violet;
+    height: 20%;
+}

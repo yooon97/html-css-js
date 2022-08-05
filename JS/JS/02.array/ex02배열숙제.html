@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 23,54,78,13,44
+        let arr = [23,54,78,13,44]
+        
+        // 2. 비교할 대상 maxNum을 만든다
+        let maxNum = arr[0];
+        // 3. maxNum과 리스트의 값을 순서대로 비교 후,
+        // 4. 최종적으로 가장 큰 수 alert 출력
+        for(i=0; i<arr.length; i++) {
+            if(maxNum<arr[i]) {
+                maxNum=arr[i]
+            }
+        }
+        console.log(maxNum)
+    </script>
+</body>
+</html>

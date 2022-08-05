@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    }
+#div1{
+    background-color: red;
+    }
+#div2{
+    background-color: green;
+    margin-left: 100px;
+    }
+#div3{
+    background-color: blue;
+    margin-left: 200px;
+    }
+#div4{
+    background-color: gray;
+    margin-left: 300px;
+    }

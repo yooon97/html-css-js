@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 랜덤한 수를 하나 뽑는다.
+        // Math.random() : 0부터 1사이의 숫자중 하나
+        let ranNum = parseInt(Math.random()*100)+1;
+        console.log(ranNum)
+        while(true) {        
+        //2. 사용자에게 숫자를 입력 받는다.
+        let num = prompt('숫자를 입력해 주세요 : ')
+        //3. 비교 시작 -> alert
+        if(num==ranNum) {
+            alert('정답입니다 축하합니다🎉')
+            break
+        }else if(num>ranNum) {
+            alert('입력한 숫자보다 작은 수입니다.')
+        }else {
+            alert('입력한 숫자보다 큰 수입니다.')
+        }
+        }
+        
+    </script>
+</body>
+</html>
